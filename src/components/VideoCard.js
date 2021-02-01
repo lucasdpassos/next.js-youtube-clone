@@ -1,7 +1,24 @@
 import { Box, Typography, Avatar, makeStyles } from '@material-ui/core'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
+dayjs.extend(relativeTime)
+
+const useStyles = makeStyles(() => ({
+    caption: {
+        fontWeight: 500,
+        display: '-webkit-box',
+        '-webkit-line=-clamp':2,
+        '-webkit-box-orient':'vertical',
+        overflow:'hidden'
+
+
+    }
+}))
 
 function VideoCard( item ) {
+    const classes = useStyles()
+    
     return (
         <Box>
             <img alt={item.title} src={item.thumb} />
