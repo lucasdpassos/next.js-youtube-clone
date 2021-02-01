@@ -6,6 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
+import Hidden from '@material-ui/core/Hidden';
 import SearchIcon from '@material-ui/icons/Search';
 import VideoCall from '@material-ui/icons/VideoCall'
 import Apps from '@material-ui/icons/Apps'
@@ -56,6 +57,7 @@ function TopBar() {
                     <MenuIcon />
                     <img src="/new-youtube-logo.svg" alt="logo" className={classes.logo} />
                 </Box>
+            <Hidden mdDown>
                 <Box>
                 <Paper component="form" className={classes.search}>
               <InputBase
@@ -68,6 +70,7 @@ function TopBar() {
               </IconButton>
             </Paper>
                 </Box>
+            </Hidden>
                 <Box display="flex">
                     <IconButton className={classes.icons}>
                         <VideoCall />
