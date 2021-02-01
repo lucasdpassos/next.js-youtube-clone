@@ -68,14 +68,9 @@ const secondaryManu = [
 function NavBar() {
   const classes = useStyles();
   const [subscriptions, setSubscriptions] = useState([
-    { id: 1, name: 'Canal 1' },
+    { id: 1, name: 'Canal Lucas' },
     { id: 2, name: 'Canal 2' },
-    { id: 3, name: 'Canal 3' },
-    { id: 4, name: 'Canal 4' },
-    { id: 5, name: 'Canal 5' },
-    { id: 6, name: 'Canal 6' },
-    { id: 7, name: 'Canal 7' },
-    { id: 8, name: 'Canal 8' },
+    { id: 3, name: 'Canal 3' },   
   ]);
 
  
